@@ -1,0 +1,104 @@
+body{
+    font-family: "Montserrat";
+}
+
+.btn-outline-success {
+    color: white;
+    border-color: white;
+}
+
+.carousel-item{
+    padding: 7% 15% 2%;
+}
+
+.container-fluid{
+    padding: 2% 8%;    
+}
+
+.download-button{
+    margin: 10px 20px 0 0;
+}
+
+#features{
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 50px 0;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
+#features p{
+    color: #8f8f8f;
+}
+
+.fa-solid{
+   color: #ef8172;
+}
+
+.fa-solid:hover{
+    color: #ff4c68;
+}
+
+
+h1{
+    font-family: "Montserrat";
+    line-height: 1.5;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.navbar{
+    padding-bottom: 4.5rem;
+}
+
+.navbar-brand{
+    font-family: "Ubuntu";
+    font-size: 2rem;
+}
+
+.nav-item{
+    padding: 0 10px;
+}
+
+#navbarScroll{
+    text-align: right;
+}
+
+.phone-pic{
+    -ms-transform: rotate(150deg); /* IE 9 */
+    transform: rotate(15deg);
+    padding: 10%;
+}
+
+#press{
+    text-align: center;
+    background-color: #ef8172;
+    padding: 10px 25px;
+}
+
+.press-image{
+    width: 15%;
+    padding: 10px 25px 5px 25px;
+}
+
+.row{
+    position: relative;
+}
+
+#testimonials{
+    background-color:  #ef8172;
+    text-align: center;
+    color: white;
+}
+
+.testimonial-image{
+    width: 10%;
+    border-radius: 100%;
+}
+#title{
+    background-color:#ff4c68 ;
+    color:white;
+}
