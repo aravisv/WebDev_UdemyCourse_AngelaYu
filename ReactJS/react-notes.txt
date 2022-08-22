@@ -1,0 +1,6 @@
+//var React = require("react");
+//var ReactDOM = require("react-dom");
+
+//console.log(React);
+//console.log(typeof React);
+//why is it getting executed twice?
