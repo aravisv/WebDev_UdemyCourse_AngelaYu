@@ -1,15 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
+/*
+//var React = require("react");
+//var ReactDOM = require("react-dom");
 
-<head>
-    <title>JSX</title>
-    <link rel="stylesheet" href="styles.css" />
-</head>
+import React from "react";
+import ReactDOM from "react-dom";
 
-<body>
-    <div id="root"></div>
-    <h2 style="color: blue;">this is heading 2</h2>
-    <script src="../src/index.js" type="text/JSX"></script>
-</body>
+const firstName = "Aravinda";
+const lastName = "S V";
+const b = () => {
+  return "hiiiiii";
+};
+ReactDOM.render(
+  <div>
+    <h1
+      className="heading"
+      contentEditable="true"
+      spellCheck="false"
+    >
+      {b()} Favourite foods of {`${firstName} ${lastName}`}
+    </h1>
+    <ul>
+      <li>Pizza</li>
+      <li>Pulav</li>
+      <li>Pasta</li>
+    </ul>
 
-</html>
+    <h2 style={{ color: "red" }}> This is heading2 </h2>
+    <div>
+      <img src="https://miro.medium.com/max/1200/1*Rvs7u_g6dnDTRF-FMY4vsA.png" />
+      <img src="https://miro.medium.com/max/1200/1*Rvs7u_g6dnDTRF-FMY4vsA.png" />
+      <img src="https://miro.medium.com/max/1200/1*Rvs7u_g6dnDTRF-FMY4vsA.png" />
+    </div>
+  </div>,
+  document.getElementById("root")
+);
+
+
+//console.log(React);
+//console.log(typeof React);
+//why is it getting executed twice?
+
+
+const name = "Aravinda";
+//const year = 2022;
+
+ReactDOM.render(
+  <div>
+    <p>Created by {name}</p>
+    <p>Copyright {new Date().getFullYear()}</p>
+  </div>,
+  document.getElementById("root")
+);
+
+
+import React from "react";
+import ReactDOM from "react-dom";
+
+var hourOfTheDay = new Date().getHours();
+var greetMsg;
+var greetStyle = {
+  color: ""
+};
+
+function moment() {
+  if (hourOfTheDay <= 12) {
+    greetMsg = "Good morning";
+    greetStyle.color = "red";
+  } else if (hourOfTheDay > 12 && hourOfTheDay <= 18) {
+    greetMsg = "Good afternoon";
+    greetStyle.color = "green";
+  } else {
+    greetMsg = "Good evening";
+    greetStyle.color = "blue";
+  }
+}
+
+moment();
+
+ReactDOM.render(
+  <div>
+    <h1 style={greetStyle}> {greetMsg} </h1>
+  </div>,
+  document.getElementById("root")
+);
+*/
+
+//importing a react component
+import React from "react";
+import ReactDOM from "react-dom";
+
+import Heading from "./Heading.jsx";
+//import Heading from "./Heading";
+import List from "./List";
+
+ReactDOM.render(
+  <div>
+    <Heading />
+    <List />
+  </div>,
+  document.getElementById("root")
+);
